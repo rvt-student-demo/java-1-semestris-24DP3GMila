@@ -10,5 +10,7 @@ public class Seconds {
     int number = Integer.valueOf(scanner.nextLine());
     int calculation = number * 60 * 60 * 24;
     System.out.println(calculation);
+
+    scanner.close();
  }   
 }
