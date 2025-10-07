@@ -2,7 +2,7 @@ package rvt;
 
 import java.util.Scanner;
 
-public class Message {
+public class Message_1 {
     public static void main(String[] args) {
         // Ierakstam lietotāja ievadi kā String
         Scanner scanner = new Scanner(System.in);
