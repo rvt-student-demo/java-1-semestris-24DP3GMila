@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Write number: ");
-        int number = Integer.valueOf(scanner.nextLine());
-        if (number > 0) {
-            System.out.println("Number is positive");
-        } else if (number < 0) {
-            System.out.println("Number is negative");
+        int Number;
+
+        while (true) {
+            System.out.println("Give a number:");
+            Number = scanner.nextInt();
+            if (Number == 4) {
+                break;
+            }
         }
+        scanner.close();
     }
 }
