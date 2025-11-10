@@ -7,7 +7,7 @@ import java.util.jar.Attributes.Name;
 
 public class JMArrayList {
     public static void main(String[] args) {
-        onTheList();
+        removeLast();
     }
 
     public static void onlyTheseNumbers() {
@@ -68,7 +68,19 @@ public class JMArrayList {
         scanner.close();
     }
 
-    public static void removeLast(ArrayList<String> strings) {
+    public static void removeLast() {
+        ArrayList<String> str = new ArrayList<>();
+
+        str.add("First");
+        str.add("Second");
+        str.add("Third");
+
+        System.out.println(str);
+
+        str.removeLast();
+        str.removeLast();
+
+        System.out.println(str);
 
     }
 }

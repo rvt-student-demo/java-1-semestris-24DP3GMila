@@ -12,8 +12,6 @@ public class Message_1 {
         
         System.out.println(input + 2);
 
-        int inputAsInt = Integer.valueOf(input);
-
         scanner.close();
     
 
