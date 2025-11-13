@@ -1,48 +1,49 @@
 package rvt;
 
 public class PaymentCard {
-private double balance;
+    private double balance;
 
-public PaymentCard(double openingBalance) {
-this.balance = openingBalance;
-}
+    public PaymentCard(double openingBalance) {
+        this.balance = openingBalance;
+    }
 
-public void ToString() {
-System.out.println("The card has a balance of " + balance + " euros");
-}
+    public void to_string() {
+        System.out.println("The card has a balance of " + balance + " euros");
+    }
 
-public void EatAffordably() {
-balance -= 2.60;
-}
+    public void eat_affordably() {
+        balance -= 2.60;
+    }
 
-public void EatHeartily() {
-balance -= 4.60;
-}
+    public void eat_heartily() {
+        balance -= 4.60;
+    }
 
-public void AddMoney(double amount) {
-balance += amount;
-}
-public static void main(String[] args) {
-PaymentCard card = new PaymentCard(50);
-System.out.println(card);
+    public void add_money(double amount) {
+        balance += amount;
+    }
 
-card.EatAffordably();
-card.ToString();
+    public static void main(String[] args) {
+        PaymentCard card = new PaymentCard(50);
+        System.out.println(card);
 
-card.EatHeartily();
-card.ToString();
+        card.eat_affordably();
+        card.toString();
 
-card.AddMoney(15);
-card.ToString();
+        card.eat_heartily();
+        card.toString();
 
-card.AddMoney(10);
-card.ToString();
+        card.add_money(15);
+        card.toString();
 
-card.AddMoney(200);
-card.ToString();
+        card.add_money(10);
+        card.toString();
 
-card.EatAffordably();
-card.EatHeartily();
-card.ToString();
-}
+        card.add_money(200);
+        card.toString();
+
+        card.eat_affordably();
+        card.eat_heartily();
+        card.toString();
+    }
 }

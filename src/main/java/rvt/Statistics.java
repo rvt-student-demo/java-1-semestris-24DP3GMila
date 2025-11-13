@@ -16,10 +16,16 @@ public class Statistics {
         this.sum += number;
         this.count++;
         this.average = sum / count;
-        if (number == -1) {
-            break;
-        } else {
-            int numbers = Integer.valueOf(scanner.nextLine());
+    }
+
+    public void userInput() {
+        System.out.println("Enter numbers: ");
+        while(true) {
+            int number = scanner.nextInt();
+            if (number == -1) {
+                break;
+            }
+            addNumber(number);
         }
     }
 
@@ -34,15 +40,21 @@ public class Statistics {
     public double average() {
         return this.average;
     }
- 
+
     public static void main(String[] args) {
         Statistics statistics = new Statistics();
-       /*statistics.addNumber(3);
-        statistics.addNumber(5);
-        statistics.addNumber(1);
-        statistics.addNumber(2);*/
-        System.out.println("Count: " + statistics.getCount());
-        System.out.println("Sum: " + statistics.sum());
+        /*
+         * statistics.addNumber(3);
+         * statistics.addNumber(5);
+         * statistics.addNumber(1);
+         * statistics.addNumber(2);
+         */
+        /*
+         * System.out.println("Count: " + statistics.getCount());
+         * System.out.println("Sum: " + statistics.sum());
+         */
+        statistics.userInput();
+
         System.out.println("Average: " + statistics.average());
 
     }
