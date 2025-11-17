@@ -8,7 +8,7 @@ public class PaymentCard {
     }
 
     public void to_string() {
-        System.out.println("The card has a balance of " + balance + " euros");
+        System.out.println("The card has a balance of " + String.format("%.2f", balance) + " euros");
     }
 
     public void eat_affordably() {
@@ -28,22 +28,22 @@ public class PaymentCard {
         System.out.println(card);
 
         card.eat_affordably();
-        card.toString();
+        card.to_string();
 
         card.eat_heartily();
-        card.toString();
+        card.to_string();
 
         card.add_money(15);
-        card.toString();
+        card.to_string();
 
         card.add_money(10);
-        card.toString();
+        card.to_string();
 
         card.add_money(200);
-        card.toString();
+        card.to_string();
 
         card.eat_affordably();
         card.eat_heartily();
-        card.toString();
+        card.to_string();
     }
 }
