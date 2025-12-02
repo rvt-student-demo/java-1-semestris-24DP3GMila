@@ -1,9 +1,7 @@
 package rvt;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
 
 public class JMArrayList {
     public static void main(String[] args) {
