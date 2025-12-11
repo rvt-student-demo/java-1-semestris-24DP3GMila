@@ -7,7 +7,6 @@ public class Message_1 {
         // Ierakstam lietotāja ievadi kā String
         Scanner scanner = new Scanner(System.in);
         // Konvertējam String ievadi kā String
-
         String input = scanner.nextLine();
         
         System.out.println(input + 2);
