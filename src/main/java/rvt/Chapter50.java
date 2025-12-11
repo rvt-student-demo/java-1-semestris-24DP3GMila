@@ -1,23 +1,23 @@
 package rvt;
 
-public class Box {
+public class Chapter50 {
     private double width;
     private double height;
     private double length;
 
-    public Box(double width, double height, double length) {
+    public Chapter50(double width, double height, double length) {
         this.width = width;
         this.height = height;
         this.length = length;
     }
 
-    public Box(double side) {
+    public Chapter50(double side) {
         this.width = side;
         this.height = side;
         this.length = side;
     }
 
-    public Box(Box oldBox) {
+    public Chapter50(Chapter50 oldBox) {
         this.width = oldBox.width;
         this.height = oldBox.height;
         this.length = oldBox.length;
@@ -55,23 +55,23 @@ public class Box {
         return height * length;
     }
 
-    public Box biggerBox(Box oldBox) {
-        return new Box(
+    public Chapter50 biggerBox(Chapter50 oldBox) {
+        return new Chapter50(
             1.25 * oldBox.width(),
             1.25 * oldBox.height(),
             1.25 * oldBox.length()
         );
     }
 
-    public Box smallerBox(Box oldBox) {
-        return new Box(
+    public Chapter50 smallerBox(Chapter50 oldBox) {
+        return new Chapter50(
             0.75 * oldBox.width(),
             0.75 * oldBox.height(),
             0.75 * oldBox.length()
         );
     }
 
-    public boolean nests(Box outsideBox) {
+    public boolean nests(Chapter50 outsideBox) {
         return this.height < outsideBox.height &&
                this.width < outsideBox.width &&
                this.length < outsideBox.length;
