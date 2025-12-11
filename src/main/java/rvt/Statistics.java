@@ -34,7 +34,6 @@ public class Statistics {
         Statistics allNumbers = new Statistics();
         Statistics evenNumbers = new Statistics();
         Statistics oddNumbers = new Statistics();
-
         Scanner scanner = new Scanner(System.in);
 
         /*
