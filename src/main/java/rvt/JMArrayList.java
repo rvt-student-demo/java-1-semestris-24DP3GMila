@@ -13,6 +13,7 @@ public class JMArrayList {
         Scanner scanner = new Scanner(System.in);
         int Num = 0;
         System.out.println("Give a number!");
+        
         while (true) {
             if (Num == -1) {
                 break;
@@ -39,6 +40,7 @@ public class JMArrayList {
             }
             listOfNames.add(Name);
         }
+
         System.out.println("In total: " + listOfNames.size());
 
         scanner.close();
@@ -54,6 +56,7 @@ public class JMArrayList {
             }
             listOfNames.add(Name);
         }
+
         System.out.println("Seching for? ");
         String search = scanner.nextLine();
 
