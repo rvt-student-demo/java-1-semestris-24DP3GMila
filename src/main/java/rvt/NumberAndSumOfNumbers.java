@@ -7,6 +7,7 @@ public class NumberAndSumOfNumbers {
         Scanner scanner = new Scanner(System.in);
         int number_count = 0;
         int number_start = 0;
+        
         while (true) {
             System.out.println("Give a number: ");
             int number = Integer.valueOf(scanner.nextLine());
