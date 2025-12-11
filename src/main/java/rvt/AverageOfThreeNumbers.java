@@ -2,7 +2,7 @@ package rvt;
 
 import java.util.Scanner;
 
-public class ThreeAverage {
+public class AverageOfThreeNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
