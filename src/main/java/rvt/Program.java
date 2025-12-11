@@ -15,5 +15,5 @@ public static String getPetName () {
         // void - funkcija neatgriež NEKO
         return "Jerry";
     }
-    }
+}
     
